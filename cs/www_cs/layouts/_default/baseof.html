@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>ProfiCAD </title>
+</head>
+<body>
+    {{ partial "header" .}}
+    <hr />
+    top of baseof
+    <hr>
+    {{ .Content }}
+    <hr>
+    {{ block "main" . }}
+
+    {{end}}
+
+        <hr>
+
+    {{ block "footer" . }}
+this id the default baseof footer
+    {{end}}
+
+        {{ partial "footer" .}}
+    <hr>
+    bottom of baseof
+</body>
+</html>
