@@ -1,0 +1,18 @@
+# Hugo generated files
+/public/
+/resources/_gen/
+hugo_stats.json
+/cache/
+
+# Dependency management
+/node_modules/
+package-lock.json
+yarn.lock
+
+# OS-specific files
+.DS_Store
+
+# Optional: Hugo executable (if included in project)
+# hugo.exe
+# hugo.darwin
+# hugo.linux
