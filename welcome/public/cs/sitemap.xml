@@ -2,8 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/es/welcome/</loc>
-  </url><url>
     <loc>http://localhost:1313/cs/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -25,12 +23,6 @@
                 hreflang="cs"
                 href="http://localhost:1313/cs/categories/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/cs/de/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cs/en/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cs/es/</loc>
   </url><url>
     <loc>http://localhost:1313/cs/</loc>
     <xhtml:link
@@ -97,9 +89,5 @@
                 hreflang="cs"
                 href="http://localhost:1313/cs/welcome/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/en/welcome/</loc>
-  </url><url>
-    <loc>http://localhost:1313/de/welcome/</loc>
   </url>
 </urlset>

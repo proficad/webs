@@ -3,26 +3,19 @@ title = "ProfiCAD"
 defaultContentLanguage = "cs"
 defaultContentLanguageInSubdir = true
 
-# No theme; use local layouts
-# theme = ""
-
 [languages]
   [languages.cs]
     languageName = "Čeština"
     weight = 1
-    contentDir = "content"
   [languages.de]
     languageName = "Deutsch"
     weight = 2
-    contentDir = "content/de"
   [languages.en]
     languageName = "English"
     weight = 3
-    contentDir = "content/en"
   [languages.es]
     languageName = "Español"
     weight = 4
-    contentDir = "content/es"
 
 [params]
   appName = "ProfiCAD"
