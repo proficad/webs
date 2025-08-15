@@ -1,0 +1,33 @@
+welcome_page_title = "Welcome"
+welcome_headline = "Welcome to {{ .App }}!"
+welcome_subtitle = "Thanks for installing. Below are quick-start steps, sample drawings and a way to contact support."
+quickstart_btn = "Get started in 3 minutes"
+
+carousel_label = "Sample drawings"
+slide_label_prefix = "Slide"
+prev_label = "Previous slide"
+next_label = "Next slide"
+dots_label = "Slide navigation"
+
+step1_title = "1) Open a sample project"
+step1_text = "From **File → Open**, pick a sample and explore the workflow."
+step2_title = "2) Your first schematic"
+step2_text = "Insert symbols from **Symbols**, connect terminals with a wire and save (**Ctrl+S**)."
+step3_title = "3) Tips & shortcuts"
+step3_text = "**Ctrl+Z** undoes, **F12** opens Settings. More in Help."
+
+need_help_title = "Need help?"
+need_help_text = "Send us a short question — we respond quickly."
+support_cta = "Contact support"
+
+help_title = "FAQ & Guides"
+help_text = "Paper sizes, PDF printing, symbol library…"
+help_cta = "Open Help"
+
+whatsnew_title = "What’s new"
+whatsnew_text = "Highlights in your version {{ .Ver }}."
+whatsnew_cta = "View release notes"
+
+footer_tip = "Tip: In “Settings (F12) → Printing” you can adjust the default title block and formats."
+
+postinstall_subject = "{{ .App }} {{ .Ver }} – post‑install question"

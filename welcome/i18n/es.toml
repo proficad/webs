@@ -1,0 +1,33 @@
+welcome_page_title = "Bienvenido"
+welcome_headline = "¡Bienvenido a {{ .App }}!"
+welcome_subtitle = "Gracias por instalar. A continuación: pasos rápidos, ejemplos y cómo contactar con soporte."
+quickstart_btn = "Empieza en 3 minutos"
+
+carousel_label = "Ejemplos de planos"
+slide_label_prefix = "Diapositiva"
+prev_label = "Diapositiva anterior"
+next_label = "Siguiente diapositiva"
+dots_label = "Navegación de diapositivas"
+
+step1_title = "1) Abre un proyecto de ejemplo"
+step1_text = "Desde **Archivo → Abrir**, elige un ejemplo y explora el flujo de trabajo."
+step2_title = "2) Tu primer esquema"
+step2_text = "Inserta símbolos desde **Symbols**, conecta bornes con un conductor y guarda (**Ctrl+S**)."
+step3_title = "3) Consejos y atajos"
+step3_text = "**Ctrl+Z** deshace, **F12** abre Configuración. Más en Ayuda."
+
+need_help_title = "¿Necesitas ayuda?"
+need_help_text = "Envíanos una consulta breve: respondemos rápido."
+support_cta = "Contactar soporte"
+
+help_title = "FAQ y guías"
+help_text = "Tamaños de papel, impresión en PDF, biblioteca de símbolos…"
+help_cta = "Abrir Ayuda"
+
+whatsnew_title = "Novedades"
+whatsnew_text = "Novedades de tu versión {{ .Ver }}."
+whatsnew_cta = "Ver notas de versión"
+
+footer_tip = "Consejo: En «Configuración (F12) → Impresión» puedes ajustar el cajetín por defecto y formatos."
+
+postinstall_subject = "{{ .App }} {{ .Ver }} – consulta tras la instalación"

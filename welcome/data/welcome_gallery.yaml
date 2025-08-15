@@ -1,0 +1,64 @@
+cs:
+  - src: "/media/showcase/schema01.webp"
+    width: 1600
+    height: 900
+    alt: "Jednopólové schéma s popisovým polem"
+    caption: "Jednopólové schéma – popisové pole"
+  - src: "/media/showcase/schema02.webp"
+    width: 1600
+    height: 900
+    alt: "Rozvaděč s osazením modulů"
+    caption: "Rozvaděč – osazení modulů"
+  - src: "/media/showcase/schema03.webp"
+    width: 1600
+    height: 900
+    alt: "Svorky a automatické značení vodičů"
+    caption: "Svorky a automatické značení vodičů"
+en:
+  - src: "/media/showcase/schema01.webp"
+    width: 1600
+    height: 900
+    alt: "Single-line diagram with title block"
+    caption: "Single-line diagram – title block"
+  - src: "/media/showcase/schema02.webp"
+    width: 1600
+    height: 900
+    alt: "Panel layout with mounted modules"
+    caption: "Panel layout – module placement"
+  - src: "/media/showcase/schema03.webp"
+    width: 1600
+    height: 900
+    alt: "Terminals and auto wire numbering"
+    caption: "Terminals & automatic wire numbering"
+de:
+  - src: "/media/showcase/schema01.webp"
+    width: 1600
+    height: 900
+    alt: "Einlinienschaltplan mit Schriftfeld"
+    caption: "Einlinienschaltplan – Schriftfeld"
+  - src: "/media/showcase/schema02.webp"
+    width: 1600
+    height: 900
+    alt: "Schaltschrank mit Modulbestückung"
+    caption: "Schaltschrank – Modulbestückung"
+  - src: "/media/showcase/schema03.webp"
+    width: 1600
+    height: 900
+    alt: "Klemmen und automatische Leitungsnummerierung"
+    caption: "Klemmen & automatische Leitungsnummerierung"
+es:
+  - src: "/media/showcase/schema01.webp"
+    width: 1600
+    height: 900
+    alt: "Diagrama unifilar con cajetín"
+    caption: "Diagrama unifilar – cajetín"
+  - src: "/media/showcase/schema02.webp"
+    width: 1600
+    height: 900
+    alt: "Cuadro eléctrico con módulos montados"
+    caption: "Cuadro eléctrico – distribución de módulos"
+  - src: "/media/showcase/schema03.webp"
+    width: 1600
+    height: 900
+    alt: "Bornes y numeración automática de conductores"
+    caption: "Bornes y numeración automática de conductores"

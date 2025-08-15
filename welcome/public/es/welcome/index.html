@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bienvenido – ProfiCAD</title>
+
+<link rel="preload" href="/css/welcome.min.4e7672982701ef82593d6fecc732079053c7cad4e78760dabd7bb8bb3ba8f844.css" as="style">
+<link rel="stylesheet" href="/css/welcome.min.4e7672982701ef82593d6fecc732079053c7cad4e78760dabd7bb8bb3ba8f844.css" integrity="sha256-TnZymCcB74JZPW/sxzIHkFPHytTnh2DavXu4uzuo&#43;EQ=">
+
+</head>
+<body>
+  <div class="wrap">
+    
+  <section class="hero">
+  <h1>¡Bienvenido a ProfiCAD!</h1>
+  <p class="muted">Gracias por instalar. A continuación: pasos rápidos, ejemplos y cómo contactar con soporte.</p>
+  <a class="cta" id="cta-quickstart" href="#quickstart">Empieza en 3 minutos</a>
+  <div style="margin-top:8px;opacity:.6;font-size:.9rem">[dbg] lang: es</div>
+</section>
+
+  
+
+
+
+<section class="carousel" role="region" aria-label="Ejemplos de planos"
+         data-slide-label-prefix="Diapositiva">
+  <div class="carousel-viewport" id="demoCarousel" tabindex="0">
+    
+    <figure class="slide">
+      <img src="/media/showcase/schema01.webp" loading="lazy" width="1600" height="900" alt="Diagrama unifilar con cajetín">
+      <figcaption class="caption">Diagrama unifilar – cajetín</figcaption>
+    </figure>
+    
+    <figure class="slide">
+      <img src="/media/showcase/schema02.webp" loading="lazy" width="1600" height="900" alt="Cuadro eléctrico con módulos montados">
+      <figcaption class="caption">Cuadro eléctrico – distribución de módulos</figcaption>
+    </figure>
+    
+    <figure class="slide">
+      <img src="/media/showcase/schema03.webp" loading="lazy" width="1600" height="900" alt="Bornes y numeración automática de conductores">
+      <figcaption class="caption">Bornes y numeración automática de conductores</figcaption>
+    </figure>
+    
+  </div>
+  <div class="nav" aria-hidden="true">
+    <button class="btn" type="button" data-prev aria-label="Diapositiva anterior">‹</button>
+    <button class="btn" type="button" data-next aria-label="Siguiente diapositiva">›</button>
+  </div>
+  <div class="dots" aria-label="Navegación de diapositivas"></div>
+</section>
+
+
+  <section id="quickstart" class="grid">
+  <div class="card">
+    <h3>1) Abre un proyecto de ejemplo</h3>
+    <p>Desde <strong>Archivo → Abrir</strong>, elige un ejemplo y explora el flujo de trabajo.</p>
+  </div>
+  <div class="card">
+    <h3>2) Tu primer esquema</h3>
+    <p>Inserta símbolos desde <strong>Symbols</strong>, conecta bornes con un conductor y guarda (<strong>Ctrl+S</strong>).</p>
+  </div>
+  <div class="card">
+    <h3>3) Consejos y atajos</h3>
+    <p><strong>Ctrl+Z</strong> deshace, <strong>F12</strong> abre Configuración. Más en Ayuda.</p>
+  </div>
+</section>
+
+  <section class="grid" style="margin-top:12px">
+  <div class="card">
+    <h3>¿Necesitas ayuda?</h3>
+    <p>Envíanos una consulta breve: respondemos rápido.</p>
+    <p><a class="cta" id="cta-support" href="#" data-subject-template="ProfiCAD 13.0 – consulta tras la instalación">Contactar soporte</a></p>
+  </div>
+  <div class="card">
+    <h3>FAQ y guías</h3>
+    <p>Tamaños de papel, impresión en PDF, biblioteca de símbolos…</p>
+    <p><a id="cta-help" href="#">Abrir Ayuda</a></p>
+  </div>
+  <div class="card">
+    <h3>Novedades</h3>
+    <p>Novedades de tu versión 13.0.</p>
+    <p><a id="cta-whatsnew" href="#">Ver notas de versión</a></p>
+  </div>
+</section>
+
+
+    <footer>
+  Consejo: En «Configuración (F12) → Impresión» puedes ajustar el cajetín por defecto y formatos.
+</footer>
+
+  </div>
+  <script>
+const qs = new URLSearchParams(location.search);
+const app  = qs.get('app') || "\"ProfiCAD\"";
+const ver  = qs.get('ver') || "\"13.0\"";
+const lang = (qs.get('lang') || "\"es\"").toLowerCase();
+const appSpan = document.querySelector('#app'); if (appSpan) appSpan.textContent = app;
+const verSpan = document.querySelector('#ver'); if (verSpan) verSpan.textContent = ver;
+const L = {
+  quickstart: { cs: '/quick-start', en: '/en/quick-start', de: '/de/quick-start', es: '/es/quick-start' },
+  help:       { cs: '/help',        en: '/en/help',        de: '/de/help',        es: '/es/help' },
+  whatsnew:   { cs: '/whats-new',   en: '/en/whats-new',   de: '/de/whats-new',   es: '/es/whats-new' },
+  support:    { cs: '/support',     en: '/en/support',     de: '/de/support',     es: '/es/support' }
+};
+const pick = (m) => m[lang] || m.cs;
+const baseQuery = location.search ? location.search
+  : `?app=${encodeURIComponent(app)}&ver=${encodeURIComponent(ver)}&lang=${encodeURIComponent(lang)}&utm_source=installer&utm_medium=postinstall&utm_campaign=welcome`;
+const byId = (id)=>document.getElementById(id);
+const aQS = byId('cta-quickstart'); if (aQS) aQS.href = pick(L.quickstart) + baseQuery;
+const aH  = byId('cta-help');       if (aH)  aH.href  = pick(L.help)      + baseQuery;
+const aWN = byId('cta-whatsnew');   if (aWN) aWN.href = pick(L.whatsnew)  + baseQuery;
+const aS  = byId('cta-support');    if (aS)  { const subj = aS.getAttribute('data-subject-template') || `${app} ${ver}`;
+  aS.href  = pick(L.support) + `${baseQuery}&subject=${encodeURIComponent(subj)}&from=welcome`; }
+(function(){
+  const root = document.querySelector('.carousel'); if(!root) return;
+  const view = root.querySelector('.carousel-viewport');
+  const slides = Array.from(root.querySelectorAll('.slide'));
+  const btnPrev = root.querySelector('[data-prev]');
+  const btnNext = root.querySelector('[data-next]');
+  const dotsWrap = root.querySelector('.dots');
+  const labelPrefix = root.getAttribute('data-slide-label-prefix') || 'Slide';
+  if (slides.length < 2) { const nav=root.querySelector('.nav'); if (nav) nav.style.display='none'; if (dotsWrap) dotsWrap.style.display='none'; return; }
+  function setSizes(){ slides.forEach(s=> s.style.width = view.clientWidth + 'px'); }
+  setSizes(); window.addEventListener('resize', setSizes, { passive:true });
+  const dots = slides.map((_,i)=>{ const b=document.createElement('button'); b.className='dot'; b.type='button'; b.setAttribute('aria-label', `${labelPrefix} ${i+1}`); b.addEventListener('click', ()=> go(i)); dotsWrap.appendChild(b); return b; });
+  let idx=0, autoplay, hovering=false, focusing=false;
+  function update(){ dots.forEach((d,i)=> d.setAttribute('aria-current', i===idx ? 'true':'false')); }
+  function go(i){ idx=(i+slides.length)%slides.length; view.scrollTo({ left: idx*view.clientWidth, behavior:'smooth' }); update(); }
+  btnPrev?.addEventListener('click', ()=> go(idx-1));
+  btnNext?.addEventListener('click', ()=> go(idx+1));
+  view?.addEventListener('keydown', e=>{ if(e.key==='ArrowLeft'){ e.preventDefault(); go(idx-1); } if(e.key==='ArrowRight'){ e.preventDefault(); go(idx+1); } });
+  let t; view?.addEventListener('scroll', ()=>{ clearTimeout(t); t=setTimeout(()=>{ const n=Math.round(view.scrollLeft/view.clientWidth); if(n!==idx){ idx=n; update(); }},80); }, { passive:true });
+  function start(){ stop(); autoplay=setInterval(()=>{ if(!hovering && !focusing) go(idx+1); }, 4000); }
+  function stop(){ if(autoplay) clearInterval(autoplay); }
+  root.addEventListener('mouseenter', ()=> hovering=true);
+  root.addEventListener('mouseleave', ()=> hovering=false);
+  view?.addEventListener('focusin', ()=> focusing=true);
+  view?.addEventListener('focusout', ()=> focusing=false);
+  go(0); start();
+})();</script>
+
+</body>
+</html>

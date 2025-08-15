@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="cs">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vítejte – ProfiCAD</title>
+
+<link rel="preload" href="/css/welcome.min.4e7672982701ef82593d6fecc732079053c7cad4e78760dabd7bb8bb3ba8f844.css" as="style">
+<link rel="stylesheet" href="/css/welcome.min.4e7672982701ef82593d6fecc732079053c7cad4e78760dabd7bb8bb3ba8f844.css" integrity="sha256-TnZymCcB74JZPW/sxzIHkFPHytTnh2DavXu4uzuo&#43;EQ=">
+
+</head>
+<body>
+  <div class="wrap">
+    
+  <section class="hero">
+  <h1>Vítejte v ProfiCAD!</h1>
+  <p class="muted">Děkujeme za instalaci. Níže najdete rychlé kroky, ukázky výkresů a možnost položit dotaz.</p>
+  <a class="cta" id="cta-quickstart" href="#quickstart">Začít během 3 minut</a>
+  <div style="margin-top:8px;opacity:.6;font-size:.9rem">[dbg] lang: cs</div>
+</section>
+
+  
+
+
+
+<section class="carousel" role="region" aria-label="Ukázky výkresů"
+         data-slide-label-prefix="Snímek">
+  <div class="carousel-viewport" id="demoCarousel" tabindex="0">
+    
+    <figure class="slide">
+      <img src="/media/showcase/schema01.webp" loading="lazy" width="1600" height="900" alt="Jednopólové schéma s popisovým polem">
+      <figcaption class="caption">Jednopólové schéma – popisové pole</figcaption>
+    </figure>
+    
+    <figure class="slide">
+      <img src="/media/showcase/schema02.webp" loading="lazy" width="1600" height="900" alt="Rozvaděč s osazením modulů">
+      <figcaption class="caption">Rozvaděč – osazení modulů</figcaption>
+    </figure>
+    
+    <figure class="slide">
+      <img src="/media/showcase/schema03.webp" loading="lazy" width="1600" height="900" alt="Svorky a automatické značení vodičů">
+      <figcaption class="caption">Svorky a automatické značení vodičů</figcaption>
+    </figure>
+    
+  </div>
+  <div class="nav" aria-hidden="true">
+    <button class="btn" type="button" data-prev aria-label="Předchozí snímek">‹</button>
+    <button class="btn" type="button" data-next aria-label="Další snímek">›</button>
+  </div>
+  <div class="dots" aria-label="Navigace snímků"></div>
+</section>
+
+
+  <section id="quickstart" class="grid">
+  <div class="card">
+    <h3>1) Otevřete ukázkový projekt</h3>
+    <p>V menu <strong>File → Open</strong> vyberte příklad a prohlédněte si postupy.</p>
+  </div>
+  <div class="card">
+    <h3>2) První vlastní schéma</h3>
+    <p>Vložte symboly ze <strong>Symbols</strong>, propojte vývody drátem a uložte (<strong>Ctrl+S</strong>).</p>
+  </div>
+  <div class="card">
+    <h3>3) Tipy a zkratky</h3>
+    <p><strong>Ctrl+Z</strong> vrátí krok zpět, <strong>F12</strong> otevře nastavení. Více v nápovědě.</p>
+  </div>
+</section>
+
+  <section class="grid" style="margin-top:12px">
+  <div class="card">
+    <h3>Potřebujete poradit?</h3>
+    <p>Pošlete krátký dotaz – reagujeme rychle.</p>
+    <p><a class="cta" id="cta-support" href="#" data-subject-template="ProfiCAD 13.0 – dotaz po instalaci">Položit dotaz</a></p>
+  </div>
+  <div class="card">
+    <h3>FAQ a návody</h3>
+    <p>Velikosti papíru, tisk do PDF, knihovna symbolů…</p>
+    <p><a id="cta-help" href="#">Otevřít nápovědu</a></p>
+  </div>
+  <div class="card">
+    <h3>Co je nového</h3>
+    <p>Novinky ve vaší verzi 13.0.</p>
+    <p><a id="cta-whatsnew" href="#">Zobrazit novinky</a></p>
+  </div>
+</section>
+
+
+    <footer>
+  Tip: V „Nastavení (F12) → Tisk“ si můžete upravit implicitní popisové pole a formáty.
+</footer>
+
+  </div>
+  <script>
+const qs = new URLSearchParams(location.search);
+const app  = qs.get('app') || "\"ProfiCAD\"";
+const ver  = qs.get('ver') || "\"13.0\"";
+const lang = (qs.get('lang') || "\"cs\"").toLowerCase();
+const appSpan = document.querySelector('#app'); if (appSpan) appSpan.textContent = app;
+const verSpan = document.querySelector('#ver'); if (verSpan) verSpan.textContent = ver;
+const L = {
+  quickstart: { cs: '/quick-start', en: '/en/quick-start', de: '/de/quick-start', es: '/es/quick-start' },
+  help:       { cs: '/help',        en: '/en/help',        de: '/de/help',        es: '/es/help' },
+  whatsnew:   { cs: '/whats-new',   en: '/en/whats-new',   de: '/de/whats-new',   es: '/es/whats-new' },
+  support:    { cs: '/support',     en: '/en/support',     de: '/de/support',     es: '/es/support' }
+};
+const pick = (m) => m[lang] || m.cs;
+const baseQuery = location.search ? location.search
+  : `?app=${encodeURIComponent(app)}&ver=${encodeURIComponent(ver)}&lang=${encodeURIComponent(lang)}&utm_source=installer&utm_medium=postinstall&utm_campaign=welcome`;
+const byId = (id)=>document.getElementById(id);
+const aQS = byId('cta-quickstart'); if (aQS) aQS.href = pick(L.quickstart) + baseQuery;
+const aH  = byId('cta-help');       if (aH)  aH.href  = pick(L.help)      + baseQuery;
+const aWN = byId('cta-whatsnew');   if (aWN) aWN.href = pick(L.whatsnew)  + baseQuery;
+const aS  = byId('cta-support');    if (aS)  { const subj = aS.getAttribute('data-subject-template') || `${app} ${ver}`;
+  aS.href  = pick(L.support) + `${baseQuery}&subject=${encodeURIComponent(subj)}&from=welcome`; }
+(function(){
+  const root = document.querySelector('.carousel'); if(!root) return;
+  const view = root.querySelector('.carousel-viewport');
+  const slides = Array.from(root.querySelectorAll('.slide'));
+  const btnPrev = root.querySelector('[data-prev]');
+  const btnNext = root.querySelector('[data-next]');
+  const dotsWrap = root.querySelector('.dots');
+  const labelPrefix = root.getAttribute('data-slide-label-prefix') || 'Slide';
+  if (slides.length < 2) { const nav=root.querySelector('.nav'); if (nav) nav.style.display='none'; if (dotsWrap) dotsWrap.style.display='none'; return; }
+  function setSizes(){ slides.forEach(s=> s.style.width = view.clientWidth + 'px'); }
+  setSizes(); window.addEventListener('resize', setSizes, { passive:true });
+  const dots = slides.map((_,i)=>{ const b=document.createElement('button'); b.className='dot'; b.type='button'; b.setAttribute('aria-label', `${labelPrefix} ${i+1}`); b.addEventListener('click', ()=> go(i)); dotsWrap.appendChild(b); return b; });
+  let idx=0, autoplay, hovering=false, focusing=false;
+  function update(){ dots.forEach((d,i)=> d.setAttribute('aria-current', i===idx ? 'true':'false')); }
+  function go(i){ idx=(i+slides.length)%slides.length; view.scrollTo({ left: idx*view.clientWidth, behavior:'smooth' }); update(); }
+  btnPrev?.addEventListener('click', ()=> go(idx-1));
+  btnNext?.addEventListener('click', ()=> go(idx+1));
+  view?.addEventListener('keydown', e=>{ if(e.key==='ArrowLeft'){ e.preventDefault(); go(idx-1); } if(e.key==='ArrowRight'){ e.preventDefault(); go(idx+1); } });
+  let t; view?.addEventListener('scroll', ()=>{ clearTimeout(t); t=setTimeout(()=>{ const n=Math.round(view.scrollLeft/view.clientWidth); if(n!==idx){ idx=n; update(); }},80); }, { passive:true });
+  function start(){ stop(); autoplay=setInterval(()=>{ if(!hovering && !focusing) go(idx+1); }, 4000); }
+  function stop(){ if(autoplay) clearInterval(autoplay); }
+  root.addEventListener('mouseenter', ()=> hovering=true);
+  root.addEventListener('mouseleave', ()=> hovering=false);
+  view?.addEventListener('focusin', ()=> focusing=true);
+  view?.addEventListener('focusout', ()=> focusing=false);
+  go(0); start();
+})();</script>
+
+</body>
+</html>

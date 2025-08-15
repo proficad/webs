@@ -1,0 +1,33 @@
+welcome_page_title = "Willkommen"
+welcome_headline = "Willkommen bei {{ .App }}!"
+welcome_subtitle = "Danke für die Installation. Unten finden Sie Schnellstart-Schritte, Beispielzeichnungen und eine Kontaktmöglichkeit."
+quickstart_btn = "In 3 Minuten starten"
+
+carousel_label = "Beispielzeichnungen"
+slide_label_prefix = "Folie"
+prev_label = "Vorherige Folie"
+next_label = "Nächste Folie"
+dots_label = "Foliennavigation"
+
+step1_title = "1) Beispielprojekt öffnen"
+step1_text = "Über **Datei → Öffnen** ein Beispiel wählen und den Ablauf ansehen."
+step2_title = "2) Ihr erstes Schema"
+step2_text = "Symbole aus **Symbole** einfügen, Klemmen mit Leitungen verbinden und speichern (**Strg+S**)."
+step3_title = "3) Tipps & Shortcuts"
+step3_text = "**Strg+Z** macht rückgängig, **F12** öffnet Einstellungen. Mehr in der Hilfe."
+
+need_help_title = "Brauchen Sie Hilfe?"
+need_help_text = "Senden Sie uns eine kurze Frage – wir antworten schnell."
+support_cta = "Support kontaktieren"
+
+help_title = "FAQ & Anleitungen"
+help_text = "Papierformate, PDF-Druck, Symbolbibliothek…"
+help_cta = "Hilfe öffnen"
+
+whatsnew_title = "Was ist neu"
+whatsnew_text = "Neuigkeiten in Ihrer Version {{ .Ver }}."
+whatsnew_cta = "Release Notes ansehen"
+
+footer_tip = "Tipp: Unter „Einstellungen (F12) → Drucken“ können Sie das Standard-Schriftfeld und Formate anpassen."
+
+postinstall_subject = "{{ .App }} {{ .Ver }} – Frage nach der Installation"

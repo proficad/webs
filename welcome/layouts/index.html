@@ -1,0 +1,4 @@
+{{ define "main" }}
+  <meta http-equiv="refresh" content="0; url={{ relURL (printf "/%s" (cond (eq .Site.Language.Lang "cs") "welcome" (printf "%s/welcome" .Site.Language.Lang))) }}">
+  <p>Redirecting to welcome… <a href='{{ relURL (printf "/%s" (cond (eq .Site.Language.Lang "cs") "welcome" (printf "%s/welcome" .Site.Language.Lang))) }}'>click here</a></p>
+{{ end }}

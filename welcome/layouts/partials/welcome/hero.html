@@ -1,0 +1,6 @@
+<section class="hero">
+  <h1>{{ i18n "welcome_headline" (dict "App" (.Site.Params.appName | default "ProfiCAD")) }}</h1>
+  <p class="muted">{{ i18n "welcome_subtitle" }}</p>
+  <a class="cta" id="cta-quickstart" href="#quickstart">{{ i18n "quickstart_btn" }}</a>
+  <div style="margin-top:8px;opacity:.6;font-size:.9rem">[dbg] lang: {{ .Site.Language.Lang }}</div>
+</section>

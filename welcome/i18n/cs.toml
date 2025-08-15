@@ -1,0 +1,33 @@
+welcome_page_title = "Vítejte"
+welcome_headline = "Vítejte v {{ .App }}!"
+welcome_subtitle = "Děkujeme za instalaci. Níže najdete rychlé kroky, ukázky výkresů a možnost položit dotaz."
+quickstart_btn = "Začít během 3 minut"
+
+carousel_label = "Ukázky výkresů"
+slide_label_prefix = "Snímek"
+prev_label = "Předchozí snímek"
+next_label = "Další snímek"
+dots_label = "Navigace snímků"
+
+step1_title = "1) Otevřete ukázkový projekt"
+step1_text = "V menu **File → Open** vyberte příklad a prohlédněte si postupy."
+step2_title = "2) První vlastní schéma"
+step2_text = "Vložte symboly ze **Symbols**, propojte vývody drátem a uložte (**Ctrl+S**)."
+step3_title = "3) Tipy a zkratky"
+step3_text = "**Ctrl+Z** vrátí krok zpět, **F12** otevře nastavení. Více v nápovědě."
+
+need_help_title = "Potřebujete poradit?"
+need_help_text = "Pošlete krátký dotaz – reagujeme rychle."
+support_cta = "Položit dotaz"
+
+help_title = "FAQ a návody"
+help_text = "Velikosti papíru, tisk do PDF, knihovna symbolů…"
+help_cta = "Otevřít nápovědu"
+
+whatsnew_title = "Co je nového"
+whatsnew_text = "Novinky ve vaší verzi {{ .Ver }}."
+whatsnew_cta = "Zobrazit novinky"
+
+footer_tip = "Tip: V „Nastavení (F12) → Tisk“ si můžete upravit implicitní popisové pole a formáty."
+
+postinstall_subject = "{{ .App }} {{ .Ver }} – dotaz po instalaci"

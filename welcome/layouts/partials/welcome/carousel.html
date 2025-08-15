@@ -1,0 +1,21 @@
+{{ $gallery := site.Data.welcome_gallery | default dict }}
+{{ $items := index $gallery .Site.Language.Lang }}
+{{ if not $items }}{{ $items = $gallery.cs }}{{ end }}
+{{ if $items }}
+<section class="carousel" role="region" aria-label="{{ i18n "carousel_label" }}"
+         data-slide-label-prefix="{{ i18n "slide_label_prefix" }}">
+  <div class="carousel-viewport" id="demoCarousel" tabindex="0">
+    {{ range $items }}
+    <figure class="slide">
+      <img src="{{ .src }}" loading="lazy" width="{{ .width }}" height="{{ .height }}" alt="{{ .alt }}">
+      <figcaption class="caption">{{ .caption }}</figcaption>
+    </figure>
+    {{ end }}
+  </div>
+  <div class="nav" aria-hidden="true">
+    <button class="btn" type="button" data-prev aria-label="{{ i18n "prev_label" }}">‹</button>
+    <button class="btn" type="button" data-next aria-label="{{ i18n "next_label" }}">›</button>
+  </div>
+  <div class="dots" aria-label="{{ i18n "dots_label" }}"></div>
+</section>
+{{ end }}
